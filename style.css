@@ -1,6 +1,12 @@
-head* {
-  background-color : 	#6495ED
+body {
+  background-color:	#6495ED
+
 }
-table* {
-  text-align: center
+
+button {
+  padding: 30px
+}
+
+.Zero {
+  width: 142px
 }

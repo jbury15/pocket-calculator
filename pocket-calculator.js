@@ -1,3 +1,7 @@
+function button0() {
+
+}
+
 function button1() {
 
 }
@@ -55,5 +59,17 @@ function Subtraction() {
 }
 
 function Equals() {
+
+}
+
+function AC() {
+
+}
+
+function Sign() {
+
+}
+
+function Decimal() {
 
 }
