@@ -1,5 +1,9 @@
 function button0() {
-
+if (operation=='0'){
+  expression+='0'
+  document.getElementbyID('addition').innerHTML=expression;
+  symbol=true;
+}
 }
 
 function button1() {
