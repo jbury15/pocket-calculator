@@ -7,11 +7,13 @@
     <!-- JS -->
     <script type="text/javascript" src="js/pocket-calculator.js"></script>
     </head>
+    <div id="output" class="output">0
+    </div>
     <table align="center" height="300px" width="300px" border="30">
       <colgroup>
     <col span="5">
   </colgroup>
-  <th><td colspan="4" height="100px"><p height="400px" width="400"></p></td></th>
+  <th><td colspan="4" height="100px"><p height="400px" width="400" id="addition"></p></td></th>
   <tr>
   <td><button style="background-color: red" onclick="AC()">AC</button></td>
   <td><button style="background-color: red" onclick="Sign()">+/-</button></td>
@@ -21,10 +23,13 @@
     <col span="5">
 
     <tr>
-    <td><button onclick="button1()">1</button></td>
-    <td><button onclick="button2()">2</button></td>
-    <td><button onclick="button3()">3</button></td>
-    <td><button class="operators" style="background-color: orange" onclick="Multiplication()">x</button></td>
+    <colgroup>
+  <col span="5">
+</colgroup>
+    <td><button onclick="button7()">7</button></td>
+    <td><button onclick="button8()">8</button></td>
+    <td><button onclick="button9()">9</button></td>
+    <td><button class="operators" style="background-color: orange" onclick="Addition()">+</button></td>
     <div>
     </div>
     <colgroup>
@@ -37,17 +42,17 @@
     <div>
     </div>
     <colgroup>
-  <col span="5">
-</colgroup>
-    <td><button onclick="button7()">7</button></td>
-    <td><button onclick="button8()">8</button></td>
-    <td><button onclick="button9()">9</button></td>
-    <td><button class="operators" style="background-color: orange" onclick="Addition()">+</button></td>
+      <col span="5">
+    </colgroup>
+    <td><button onclick="button1()">1</button></td>
+    <td><button onclick="button2()">2</button></td>
+    <td><button onclick="button3()">3</button></td>
+    <td><button class="operators" style="background-color: orange" onclick="Multiplication()">x</button></td>
     <div>
     </div>
     <colgroup>
   <col span="5">
 </colgroup>
 <td><button class="Zero" onclick="button0()">0</button></td>
-<td><button onclick="Decimal()">.</button></td>
+<td><button onclick="Decimal()" class="decimal">.</button></td>
 <td><button class="operators" style="background-color: orange" onclick="Equals()">=</button></td>

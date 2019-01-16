@@ -1,3 +1,8 @@
+var expression="";
+var symbol=false;
+var inputLength=9;
+var decimalZero=false;
+var decimalPoint=true;
 function button0() {
 if (operation=='0'){
   expression+='0'
@@ -7,7 +12,11 @@ if (operation=='0'){
 }
 
 function button1() {
-
+if (operation=='0'){
+  expression+-'0'
+  document.getElementbyID('addition').innerHTML=expression;
+  symbol=true;
+}
 }
 
 function button2() {
