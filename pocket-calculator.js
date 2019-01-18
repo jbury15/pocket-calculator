@@ -1,88 +1,285 @@
-var expression="";
-var symbol=false;
-var inputLength=9;
-var decimalZero=false;
-var decimalPoint=true;
-function button0() {
-if (operation=='0'){
-  expression+='0'
-  document.getElementbyID('addition').innerHTML=expression;
-  symbol=true;
-}
-}
+let string = "";
+var state = 0
+let saved= "";
+let operatorUsed = 0;
+var decimalUsed = false;
+var acUsed = false;
 
-function button1() {
-if (operation=='0'){
-  expression+-'0'
-  document.getElementbyID('addition').innerHTML=expression;
-  symbol=true;
-}
-}
-
-function button2() {
-
-}
-
-function button3() {
-
+function d0() {
+  if (state == 1) {
+    string = "0"
+  } else {
+    if (operatorUsed == 1) {
+      operatorUsed = 0;
+      string = saved;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+    string += "0"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function button4() {
-
+function d1() {
+  if (state == 1) {
+    string = "1"
+  } else {
+    if (operatorUsed == 1) {
+      operatorUsed = 0;
+      string = saved;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+    string += "1"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function button5() {
-
+function d2() {
+  if (state == 1) {
+    string = "2"
+  } else {
+    if (operatorUsed == 1) {
+      operatorUsed = 0;
+      string = saved;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+    string += "2"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function button6() {
-
+function d3() {
+  if (state == 1) {
+    string = "3"
+  } else {
+    if (operatorUsed == 1) {
+      operatorUsed = 0;
+      string = saved;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+  string += "3"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function button7() {
-
+function d4() {
+  if (state == 1) {
+    string = "4"
+  } else {
+    if (operatorUsed == 1) {
+      operatorUsed = 0;
+      string = saved;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+  string += "4"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function button8() {
-
+function d5() {
+  if (state == 1) {
+    string = "5"
+  } else {
+    if (operatorUsed == 1) {
+      operatorUsed = 0;
+      string = saved;
+    }
+     if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+  string += "5"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function button9() {
-
+function d6() {
+  if (state == 1) {
+    string = "6"
+  } else {
+    if (operatorUsed == 1) {
+    operatorUsed = 0;
+    string = saved;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+  string += "6"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function Multiplication() {
-
+function d7() {
+  if (state == 1) {
+    string = "7"
+  } else {
+    if (operatorUsed == 1) {
+      operatorUsed = 0;
+      string = saved;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+  string += "7"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function Division() {
-
+function d8() {
+  if (state == 1) {
+    string = "8"
+  } else {
+    if (operatorUsed == 1) {
+      string = saved;
+      operatorUsed = 0;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+  string += "8"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function Percent() {
-
+function d9() {
+  if (state == 1) {
+    string = "9"
+  } else {
+    if (operatorUsed == 1) {
+      string = saved;
+      operatorUsed = 0;
+    }
+    if (decimalUsed == 1) {
+      decimalUsed = 0;
+      string = saved;
+    }
+    string += "9"
+  }
+  var div = document.getElementById("output");
+  div.innerHTML = string;
 }
 
-function Addition() {
-
+function ac() {
+  var div = document.getElementById("output");
+  div.innerHTML = 0;
+  string = " "
+  saved = ""
+  operatorUsed = 0;
+  acUsed = true;
+  state = 0;
+  if (acUsed == true) {
+    decimalUsed = false;
+    document.getElementById("deciButton").disabled = false;
+  }
 }
 
-function Subtraction() {
-
+function multi() {
+  var div = document.getElementById("output");
+  saved = string;
+  saved += "*"
+  div.innerHTML = saved;
+  state = 0;
+  operatorUsed = 1;
+  if (operatorUsed == 1) {
+    document.getElementById("deciButton").disabled = false;
+  }
 }
 
-function Equals() {
-
+function addi() {
+  var div = document.getElementById("output");
+  saved = string;
+  saved += "+"
+  div.innerHTML = saved;
+  state = 0;
+  operatorUsed = 1;
+  if (operatorUsed == 1) {
+    document.getElementById("deciButton").disabled = false;
+  }
 }
 
-function AC() {
-
+function divi() {
+  var div = document.getElementById("output");
+  saved = string;
+  saved += "/"
+  div.innerHTML = saved;
+  state = 0;
+  operatorUsed = 1;
+  if (operatorUsed == 1) {
+    document.getElementById("deciButton").disabled = false;
+  }
 }
 
-function Sign() {
-
+function subtr() {
+  var div = document.getElementById("output");
+  saved = string;
+  saved += "-"
+  div.innerHTML = saved;
+  state = 0;
+  operatorUsed = 1;
+  if (operatorUsed == 1) {
+    document.getElementById("deciButton").disabled = false;
+  }
 }
 
-function Decimal() {
+function equals() {
+  var div= document.getElementById("output");
+  string = eval(string);
+  div.innerHTML = Number(string).toLocaleString();
+  if (Number(string) > 999999999 || Number(string) < 0.000000001) {
+    div.innerHTML = Number(string).toExponential()
+  }
+  state = 1;
+}
 
+function negative() {
+  var div= document.getElementById("output");
+  string = Number(string) * (-1);
+  div.innerHTML = string;
+  state = 0;
+}
+
+function decimal() {
+  if (decimalUsed == false){
+    var div = document.getElementById("output");
+    saved = string;
+    saved += ".";
+    div.innerHTML = saved;
+    decimalUsed = true;
+  }
+  if (decimalUsed == true) {
+    document.getElementById("deciButton").disabled = true;
+  }
+}
+
+function percent() {
+  var div = document.getElementById("output");
+  string = Number(string) * (0.01)
+  div.innerHTML = string;
+  state = 0;
 }

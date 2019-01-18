@@ -1,58 +1,44 @@
+<!DOCTYPE html>
 
 <html>
   <head>
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-
-    <!-- JS -->
-    <script type="text/javascript" src="js/pocket-calculator.js"></script>
-    </head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src="pocket-calculator.js"></script>
+  </head>
+  <body>
+    <div align="right">
+    </div>
+   <center>
     <div id="output" class="output">0
     </div>
-    <table align="center" height="300px" width="300px" border="30">
-      <colgroup>
-    <col span="5">
-  </colgroup>
-  <th><td colspan="4" height="100px"><p height="400px" width="400" id="addition"></p></td></th>
-  <tr>
-  <td><button style="background-color: red" onclick="AC()">AC</button></td>
-  <td><button style="background-color: red" onclick="Sign()">+/-</button></td>
-  <td><button style="background-color: red" onclick="Percent()">%</button></td>
-  <td><button class="operators" style="background-color: orange">/</button></td>
-</tr>
-    <col span="5">
-
-    <tr>
-    <colgroup>
-  <col span="5">
-</colgroup>
-    <td><button onclick="button7()">7</button></td>
-    <td><button onclick="button8()">8</button></td>
-    <td><button onclick="button9()">9</button></td>
-    <td><button class="operators" style="background-color: orange" onclick="Addition()">+</button></td>
+    <br/>
+    <button onclick="ac()" class="mod">AC</button>
+    <button onclick="negative()" class="mod">+/-</button>
+    <button onclick="percent()" class="mod">%</button>
+    <button onclick="divi()" class="operators">÷</button>
     <div>
     </div>
-    <colgroup>
-      <col span="5">
-    </colgroup>
-    <td><button onclick="button4()">4</button></td>
-    <td><button onclick="button5()">5</button></td>
-    <td><button onclick="button6()">6</button></td>
-    <td><button class="operators" style="background-color: orange" onclick="Subtraction()">-</button></td>
+    <button onclick="d7()">7</button>
+    <button onclick="d8()">8</button>
+    <button onclick="d9()">9</button>
+    <button onclick="multi()" class="operators">x</button>
     <div>
     </div>
-    <colgroup>
-      <col span="5">
-    </colgroup>
-    <td><button onclick="button1()">1</button></td>
-    <td><button onclick="button2()">2</button></td>
-    <td><button onclick="button3()">3</button></td>
-    <td><button class="operators" style="background-color: orange" onclick="Multiplication()">x</button></td>
+    <button onclick="d4()">4</button>
+    <button onclick="d5()">5</button>
+    <button onclick="d6()">6</button>
+    <button onclick="subtr()" class="operators">-</button>
     <div>
     </div>
-    <colgroup>
-  <col span="5">
-</colgroup>
-<td><button class="Zero" onclick="button0()">0</button></td>
-<td><button onclick="Decimal()" class="decimal">.</button></td>
-<td><button class="operators" style="background-color: orange" onclick="Equals()">=</button></td>
+    <button onclick="d1()">1</button>
+    <button onclick="d2()">2</button>
+    <button onclick="d3()">3</button>
+    <button onclick="addi()" class="operators">+</button>
+    <div>
+    </div>
+    <button onclick="d0()" id="zero">0</button>
+    <button id="deciButton" onclick="decimal()">.</button>
+    <button onclick="equals()" class="operators">=</button>
+   </center>
+  </body>
+</html>
