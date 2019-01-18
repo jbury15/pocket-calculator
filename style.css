@@ -1,5 +1,6 @@
 body {
-  background-color:	#6495ED
+  background-image: url("hexagons.png");
+  background-size: cover;
 
 }
 
