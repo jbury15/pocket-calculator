@@ -31,7 +31,7 @@ color: white;
   background-color: #FF0000
 }
 
-button.mod:hover{
+.mod:hover{
   background-color: 	#000000
   font-color: 	#FFFFFF
 }
