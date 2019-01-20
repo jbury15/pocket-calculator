@@ -31,6 +31,10 @@ color: white;
   background-color: #FF0000
 }
 
+button.mod:hover{
+  background-color: 	#000000
+  font-color: 	#FFFFFF
+}
 .operators {
   background-color: #00FF00
 }
