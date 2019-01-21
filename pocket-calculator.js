@@ -251,7 +251,7 @@ function equals() {
   var div= document.getElementById("output");
   string = eval(string);
   div.innerHTML = Number(string).toLocaleString();
-  if (Number(string) > 999999999 || Number(string) < 0.000000001) {
+  if (Number(string) > 999999999 || Number(string) < 0.00000001) {
     div.innerHTML = Number(string).toExponential()
   }
   state = 1;
