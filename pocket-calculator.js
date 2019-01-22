@@ -199,7 +199,7 @@ function ac() {
   }
 }
 
-function multi() {
+function multiplication1() {
   var div = document.getElementById("output");
   saved = string;
   saved += "*"
@@ -211,7 +211,7 @@ function multi() {
   }
 }
 
-function addi() {
+function addition1() {
   var div = document.getElementById("output");
   saved = string;
   saved += "+"
@@ -223,7 +223,7 @@ function addi() {
   }
 }
 
-function divi() {
+function division1() {
   var div = document.getElementById("output");
   saved = string;
   saved += "/"
@@ -235,7 +235,7 @@ function divi() {
   }
 }
 
-function subtr() {
+function subtration1() {
   var div = document.getElementById("output");
   saved = string;
   saved += "-"
@@ -247,7 +247,7 @@ function subtr() {
   }
 }
 
-function equals() {
+function equals1() {
   var div= document.getElementById("output");
   string = eval(string);
   div.innerHTML = Number(string).toLocaleString();
@@ -257,14 +257,14 @@ function equals() {
   state = 1;
 }
 
-function negative() {
+function sign() {
   var div= document.getElementById("output");
   string = Number(string) * (-1);
   div.innerHTML = string;
   state = 0;
 }
 
-function decimal() {
+function decimal1() {
   if (decimalUsed == false){
     var div = document.getElementById("output");
     saved = string;
@@ -277,7 +277,7 @@ function decimal() {
   }
 }
 
-function percent() {
+function percent1() {
   var div = document.getElementById("output");
   string = Number(string) * (0.01)
   div.innerHTML = string;
