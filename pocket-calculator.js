@@ -288,7 +288,7 @@ function square() {
  if (math=='square'){
     expression+='**2';
     outputExpression+='^2';
-    document.getElementById("output").innerHTML=outputExpression;
+    document.getElementById("output");
     notNumber=true;
     numlength++;
   }
