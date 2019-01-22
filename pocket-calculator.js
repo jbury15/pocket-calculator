@@ -283,3 +283,13 @@ function percent1() {
   div.innerHTML = string;
   state = 0;
 }
+
+function square() {
+ if (math=='square'){
+    expression+='**2';
+    outputExpression+='^2';
+    document.getElementById("output").innerHTML=outputExpression;
+    notNumber=true;
+    numlength++;
+  }
+}
