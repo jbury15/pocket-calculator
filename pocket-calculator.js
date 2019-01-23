@@ -195,7 +195,7 @@ function ac() {
   state = 0;
   if (acUsed == true) {
     decimalUsed = false;
-    document.getElementById("deciButton").disabled = false;
+    document.getElementById("decimal").disabled = false;
   }
 }
 
@@ -207,7 +207,7 @@ function multiplication1() {
   state = 0;
   operatorUsed = 1;
   if (operatorUsed == 1) {
-    document.getElementById("deciButton").disabled = false;
+    document.getElementById("decimal").disabled = false;
   }
 }
 
@@ -219,7 +219,7 @@ function addition1() {
   state = 0;
   operatorUsed = 1;
   if (operatorUsed == 1) {
-    document.getElementById("deciButton").disabled = false;
+    document.getElementById("decimal").disabled = false;
   }
 }
 
@@ -231,7 +231,7 @@ function division1() {
   state = 0;
   operatorUsed = 1;
   if (operatorUsed == 1) {
-    document.getElementById("deciButton").disabled = false;
+    document.getElementById("decimal").disabled = false;
   }
 }
 
@@ -243,7 +243,7 @@ function subtration1() {
   state = 0;
   operatorUsed = 1;
   if (operatorUsed == 1) {
-    document.getElementById("deciButton").disabled = false;
+    document.getElementById("decimal").disabled = false;
   }
 }
 
@@ -273,7 +273,7 @@ function decimal1() {
     decimalUsed = true;
   }
   if (decimalUsed == true) {
-    document.getElementById("deciButton").disabled = true;
+    document.getElementById("decimal").disabled = true;
   }
 }
 
