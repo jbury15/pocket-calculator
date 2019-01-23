@@ -5,7 +5,7 @@ let operatorUsed = 0;
 var decimalUsed = false;
 var acUsed = false;
 
-function d0() {
+function button0() {
   if (state == 1) {
     string = "0"
   } else {
@@ -23,7 +23,7 @@ function d0() {
   div.innerHTML = string;
 }
 
-function d1() {
+function button1() {
   if (state == 1) {
     string = "1"
   } else {
@@ -41,7 +41,7 @@ function d1() {
   div.innerHTML = string;
 }
 
-function d2() {
+function button2() {
   if (state == 1) {
     string = "2"
   } else {
@@ -59,7 +59,7 @@ function d2() {
   div.innerHTML = string;
 }
 
-function d3() {
+function button3() {
   if (state == 1) {
     string = "3"
   } else {
@@ -77,7 +77,7 @@ function d3() {
   div.innerHTML = string;
 }
 
-function d4() {
+function button4() {
   if (state == 1) {
     string = "4"
   } else {
@@ -95,7 +95,7 @@ function d4() {
   div.innerHTML = string;
 }
 
-function d5() {
+function button5() {
   if (state == 1) {
     string = "5"
   } else {
@@ -113,7 +113,7 @@ function d5() {
   div.innerHTML = string;
 }
 
-function d6() {
+function button6() {
   if (state == 1) {
     string = "6"
   } else {
@@ -131,7 +131,7 @@ function d6() {
   div.innerHTML = string;
 }
 
-function d7() {
+function button7() {
   if (state == 1) {
     string = "7"
   } else {
@@ -149,7 +149,7 @@ function d7() {
   div.innerHTML = string;
 }
 
-function d8() {
+function button8() {
   if (state == 1) {
     string = "8"
   } else {
@@ -167,7 +167,7 @@ function d8() {
   div.innerHTML = string;
 }
 
-function d9() {
+function button9() {
   if (state == 1) {
     string = "9"
   } else {
